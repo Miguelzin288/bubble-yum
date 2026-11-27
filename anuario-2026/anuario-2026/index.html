@@ -1,0 +1,85 @@
+  <!doctype html>
+  <html lang="pt-BR">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Anuário 2026 | Escola Joaquim Andrade Meirelles</title>
+      <meta name="description" content="Anuário digital da Escola Joaquim Andrade Meirelles — turma de formandos 2026." />
+      <meta property="og:title" content="Anuário 2026 | Escola Joaquim Andrade Meirelles" />
+      <meta property="og:description" content="Anuário digital da turma de formandos 2026 da Escola Joaquim Andrade Meirelles." />
+      <meta property="og:type" content="website" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+      <div class="page">
+        <header class="header">
+          <h1>Anuário 2026</h1>
+          <p>Escola Joaquim Andrade Meirelles</p>
+        </header>
+
+        <main>
+          <section id="cover-view" aria-label="Capa do anuário">
+            <button id="open-book" class="book-cover" type="button">
+              <span class="border-1"></span>
+              <span class="border-2"></span>
+              <div style="font-size: 2.5rem">🎓</div>
+              <h2>Anuário</h2>
+              <div class="subtitle">2026</div>
+              <p>Escola Joaquim Andrade Meirelles</p>
+              <span class="hint">Clique para abrir</span>
+            </button>
+          </section>
+
+          <section id="opening-view" class="opening hidden" aria-live="polite">
+            <div class="icon">🎓</div>
+            <p>Abrindo o anuário...</p>
+          </section>
+
+          <section id="pages-view" class="book-pages hidden" aria-label="Páginas do anuário">
+            <div class="book-top">📖 <span id="letter-range"></span></div>
+
+            <div class="book-spread" id="book-spread">
+              <div class="page-column" id="left-page"></div>
+              <div class="page-column">
+                <div id="right-page"></div>
+                <div class="page-info" id="page-info"></div>
+              </div>
+            </div>
+
+            <nav class="nav" aria-label="Navegação de páginas">
+              <button id="prev-page" class="btn" type="button">← Anterior</button>
+              <div id="dots" class="dots"></div>
+              <button id="next-page" class="btn" type="button">Próxima →</button>
+            </nav>
+          </section>
+        </main>
+
+        <footer class="footer">
+          <div class="footer-grid">
+            <section>
+              <h3>Escola Joaquim Andrade Meirelles</h3>
+              <p>Turma de formandos 2026</p>
+            </section>
+            <section>
+              <h4>Contato</h4>
+              <p>☎ (12) 39330993</p>
+              <p> R. Maranduba, s/nº - Jardim Satélite, São José dos Campos - SP, 12230-680</p>
+            </section>
+            <section>
+              <h4>Desenvolvido por</h4>
+              <ul>
+                <li>Miguel Braga</li>
+                <li>Miguel Sarti</li>
+                <li>Luiggi Grecco</li>
+                <li>Vitor Gabriel</li>
+              </ul>
+            </section>
+          </div>
+          <div class="footer-bottom">© 2026 Anuário Digital — Equipe Bubble Yum</div>
+        </footer>
+      </div>
+
+      <script src="./script.js"></script>
+    </body>
+  </html>
